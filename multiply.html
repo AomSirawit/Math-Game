@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <title>MathGame</title>
+    <link rel="stylesheet" href="multi.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li class="dropdown-link">
+            <a href="#">เกมอื่นๆ
+            <i class="fa-duotone fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown">
+              <li><a href="addition.html">
+                  บวกเลข
+                </a></li>
+              <li><a href="minus.html">
+                  ลบเลข
+                </a></li>
+              <li><a href="multiply.html">
+                  คูณเลข
+                <li><a href="divide.html">
+                  หารเลข
+                </a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">เกี่ยวกับ</a></li>
+          <li><a href="contract.html">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <br>
+      <div class="inbox">
+        <h1 class="heading">
+            เกมคูณสุดโหด :C
+        </h1>
+        <br>
+        <h2 class="heading2">
+            จงหาผลลัพธ์ของสองเลขนี้
+        </h2>
+        <br><br>
+        <input class="question" id="intext1" type="text">
+        <p> x </p>
+        <input class="question" id="intext2" type="text">
+        <br>
+        <p> = </p>
+        <input class="answer" id="answer" type="text" pattern="[0-9]+" placeholder="ใส่คำตอบ">
+        <br>
+        <button class="btn" onclick="checkAnswer()">เช็คคำตอบ</button>
+        <br><br>
+        <h3 id="result" ></h3>
+      </div>
+      <small class="footer">
+        <small>copyright © 2023 AomSirawit.github.All rights Reserved</small>
+      </small>
+   
+    <script src="multi.js"></script>
+    
+</body>
+</html>

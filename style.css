@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  body {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .navbar {
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: #6d6d6d;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: relative;
+    
+    
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  li a {
+    padding: 20px 30px;
+    color: #4f99ca;
+  }
+  li a i {
+    margin-left: 5px;
+    font-size: 12px;
+    transition: 0.4s;
+  }
+  li:hover {
+    background-color: #f9f9f9;
+  }
+  .dropdown {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.3s;
+    left: 0;
+    width: 200px;
+  }
+  .dropdown-link:hover .dropdown {
+    top: 105%;
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown-link:hover a i {
+    transform: rotate(-180deg);
+  }
+  .inbox{
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    flex-flow: wrap;
+    width: auto;
+  }
+.btn{
+    background-color: #00b7ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: .3s;
+}
+.btn:hover{
+    color: #ffffff;
+    background-color: #0797f7;
+}
+.footer{
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  flex-flow: wrap;
+  width: auto;
+}
