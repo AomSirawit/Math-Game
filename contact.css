@@ -151,9 +151,9 @@
   
   /* CSS for mobile screens */
   @media screen and (max-width: 480px) {
-    .navbar{
-      font-size: 10px;
-    }
+     .navbar{
+    font-size: 10px;
+  }
     .middle-text{
       font-size: 70%;
       margin-top: 0px;
