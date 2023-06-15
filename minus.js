@@ -4,6 +4,7 @@ let n2 = Math.floor(Math.random()*20+1);
 
 document.getElementById("intext1").value = n1;
 document.getElementById("intext2").value = n2;
+
 //calculate answer
 let answer = n1 - n2;
 function checkAnswer(){

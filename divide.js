@@ -1,6 +1,6 @@
 //random number
 let n1 = Math.floor(Math.random()*20+1);
-let n2 = Math.floor(Math.random()*20+1);
+let n2 = Math.floor(Math.random() * (n1 - 1) + 1);
 
 document.getElementById("intext1").value = n1;
 document.getElementById("intext2").value = n2;
@@ -18,7 +18,7 @@ function checkAnswer(){
     }
     var user = document.getElementById("answer").value = "";
     n1 = Math.floor(Math.random()*20+1);
-    n2 = Math.floor(Math.random()*20+1);
+    n2 = Math.floor(Math.random() * (n1 - 1) + 1);
 
     document.getElementById("intext1").value = n1;
     document.getElementById("intext2").value = n2;
